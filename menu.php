@@ -3,8 +3,11 @@
 <head>
 	<title></title>
 </head>
+<<<<<<< HEAD
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+=======
+>>>>>>> c636d4625f453e010a0d83584ace27970b0361f9
 <style type="text/css">
 	
 	* {
@@ -12,6 +15,7 @@
 		margin: 0;
 	}
 
+<<<<<<< HEAD
 /*.container {width: 100%;height: 60px;background: #48D1CC;display: flex;justify-content: center;align-items: center;}
 .teste ul li {display: inline;text-decoration: none;padding: 0px 30px;margin-left: 30px;}
 .teste ul li a {color: #fff; text-decoration: none;}*/
@@ -122,6 +126,29 @@
       		}
       }
    
+=======
+	.container {
+		width: 100%;
+		height: 60px;
+		background: #48D1CC;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.teste ul li {
+		display: inline;
+		text-decoration: none;
+		padding: 0px 30px;
+		margin-left: 30px;
+	}
+
+	.teste ul li a {
+		color: #fff; 
+		text-decoration: none;
+		
+	}
+>>>>>>> c636d4625f453e010a0d83584ace27970b0361f9
 	.flex-container{
 		display: flex;
 		justify-content: center;
@@ -253,6 +280,7 @@
 
 <!-- menu #########################################################################################################################################################-->
 	<div class="container">
+<<<<<<< HEAD
         
 		<input type="checkbox" id="bt_menu">
 	<label for="bt_menu">&#9776;</label>
@@ -287,6 +315,10 @@
 
 
 		<!-- <nav><h2  style="margin-left: -30px; color: white; font-family: verdana; "> Simulado online</h2> </nav>
+=======
+
+		<nav><h2  style="margin-left: -30px; color: white; font-family: verdana; "> Simulado online</h2> </nav>
+>>>>>>> c636d4625f453e010a0d83584ace27970b0361f9
 		<nav><img class="logo" src="images/icon2.png" style="padding-top: -20px; margin-left: -290px; width: 60px;"></nav>
 		<nav class="teste">
 
@@ -305,7 +337,11 @@
 					<a href="" style="font-family: verdana; ">SOBRE</a>
 				</li>
 			</ul>
+<<<<<<< HEAD
 		</nav> -->
+=======
+		</nav>
+>>>>>>> c636d4625f453e010a0d83584ace27970b0361f9
 	</div>
 
 	<!-- cadastro ################################################################################################################################################-->
@@ -357,7 +393,11 @@
 	    </div>
 	    </form>
  <!--login ###################################################################################################################################################-->
+<<<<<<< HEAD
  <form>
+=======
+
+>>>>>>> c636d4625f453e010a0d83584ace27970b0361f9
 <div class="flex-container2" style="color: white;" >
 		<img src="images/icon4.png" style="width: 130px; height: 120px; margin-top: 320px; margin-left: 330px;">
 
@@ -421,6 +461,35 @@ if (!empty($nom)) {
 
      <!--CODIGO DO LOGIN -->
 
+<<<<<<< HEAD
 
+=======
+	<?php
+    if (isset($_POST['user']) && isset($_POST['pass'])) {
+
+        $sql_verificar_login_usuario = "SELECT * FROM aluno WHERE usuario = '".$_POST['user']."' and senha = '".$_POST['pass']."'";
+        $query_verificar_login_usuario = mysqli_query($conexao, $sql_verificar_login_usuario);
+
+        if (mysqli_num_rows($query_verificar_login_usuario) > 0) {
+            
+            $_SESSION['usuario'] = $_POST['user'];
+            header('location: aluno.php');
+
+        } else {
+
+            echo "<script>
+                    function ErroLogin(){
+
+                        document.getElementById('alerta').className = 'form-control alert alert-danger';
+                        document.getElementById('alerta').innerHTML = 'Usuário ou senha incorreto!';
+                        
+                    }
+                </script>";
+            
+        }
+
+    }
+?>
+>>>>>>> c636d4625f453e010a0d83584ace27970b0361f9
 </body>
 </html>
