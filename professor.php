@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +12,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
+<<<<<<< HEAD
+=======
   
 
   *{
@@ -27,6 +35,7 @@
         position: relative;
       }
 
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
   
       .menu ul li{
         width: 150px;
@@ -122,6 +131,161 @@
             max-height: 800px;
           }
       }
+
+
+
+<<<<<<< HEAD
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  nav { display: flex;
+    flex-direction: row
+   }
+  .menu{
+    width: 100%;
+    height: 50px;
+    background-color: #48D1CC;
+    font-family: 'Arial';
+    position: relative;
+  }
+      .menu ul{
+        list-style: none;
+        position: relative;
+      }
+
+  
+=======
+  
+=======
+
+>>>>>>> f95aab6b1dfd2cb001887de962e59ac356367e38
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+  
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  nav { display: flex;
+    flex-direction: row
+   }
+  .menu{
+    width: 100%;
+    height: 50px;
+    background-color: #48D1CC;
+    font-family: 'Arial';
+    position: relative;
+  }
+      .menu ul{
+        list-style: none;
+        position: relative;
+      }
+
+  
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
+      .menu ul li{
+        width: 150px;
+        float: left;
+      }
+
+      .menu a{
+
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background-color: #48D1CC;
+        color: #fff;
+        margin-left: 
+        
+      }
+      .menu ul ul{
+        position: absolute;
+        visibility: hidden;
+
+      }
+      .menu ul li:hover ul{
+        visibility: visible;
+      }
+
+      .menu a:hover{
+        background-color: #F0E68C;
+        color: #555;
+
+      }
+
+      .menu ul ul li{
+        float: none;
+        border-bottom: solid 1px #ccc;
+<<<<<<< HEAD
+
+
+      }
+
+      .menu ul ul li a{
+        background-color: #F0E68C;
+      
+      }
+      label[for="bt_menu"]{
+        padding: 5px;
+        background-color: #48D1CC;
+        color: #fff;
+        font-family: "Arial";
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+      }
+      #bt_menu{
+        display: none;
+      }
+      label[for="bt_menu"]{
+        display: none;
+      }
+
+      @media(max-width: 800px){
+        label[for="bt_menu"]{
+        display: block;
+      }
+      #bt_menu:checked ~ .menu{
+        margin-left: 0;
+      }
+
+      nav h2{ visibility: hidden; display: none; }
+      .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+        width: 100%;
+      }
+          menu ul{
+            width: 100%;
+            float: none;
+          }
+          .menu ul li{
+            width: 100%;
+            float: left;
+          }
+          .menu ul ul{
+            position: static;
+            overflow: hidden;
+            max-height: 0;
+            transition: all .4s;
+          }
+          .menu ul li:hover ul{
+            height: auto;
+            max-height: 800px;
+          }
+      }
       .flex-container{
     display: flex;
     justify-content: center;
@@ -138,6 +302,8 @@
         margin-left: -230px;
   }
   .cadasnome{
+=======
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
 
       margin-top:20px;
       margin-left: 155px;
@@ -145,7 +311,9 @@
     height: 25px;
     }
 
+      }
 
+<<<<<<< HEAD
      .cadastelefone {
       margin-top: 10px;
         margin-left: 155px;
@@ -212,8 +380,66 @@
     width: 250px;
     height: 25px;
     }
+=======
+      .menu ul ul li a{
+        background-color: #F0E68C;
+      
+      }
+      label[for="bt_menu"]{
+        padding: 5px;
+        background-color: #48D1CC;
+        color: #fff;
+        font-family: "Arial";
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+      }
+      #bt_menu{
+        display: none;
+      }
+      label[for="bt_menu"]{
+        display: none;
+      }
 
+      @media(max-width: 800px){
+        label[for="bt_menu"]{
+        display: block;
+      }
+      #bt_menu:checked ~ .menu{
+        margin-left: 0;
+      }
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
 
+      nav h2{ visibility: hidden; display: none; }
+      .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+        width: 100%;
+      }
+          menu ul{
+            width: 100%;
+            float: none;
+          }
+          .menu ul li{
+            width: 100%;
+            float: left;
+          }
+          .menu ul ul{
+            position: static;
+            overflow: hidden;
+            max-height: 0;
+            transition: all .4s;
+          }
+          .menu ul li:hover ul{
+            height: auto;
+            max-height: 800px;
+          }
+      }
+
+<<<<<<< HEAD
    .cadasemail2{
         margin-top: 30px;
         margin-left: -25px;
@@ -283,10 +509,27 @@
         background-color:#B0C4DE ;
         box-shadow: 0 5px 0 #4682B4;
       }
+=======
+
+
+<<<<<<< HEAD
+  
+=======
+	
+>>>>>>> c636d4625f453e010a0d83584ace27970b0361f9
+>>>>>>> f95aab6b1dfd2cb001887de962e59ac356367e38
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
 
 </style>
 <body background="images/fundo4.jpg">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f95aab6b1dfd2cb001887de962e59ac356367e38
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
 <!-- menu ######################################-->
 <div class="container">
         
@@ -339,6 +582,7 @@
       </ul>
     </nav> -->
 </div>
+<<<<<<< HEAD
 <style type="text/css">
   div.resp form{
     display: flex;
@@ -454,6 +698,43 @@
 
  <!--login ###################################################################################################################################################-->
 
+=======
+
+<<<<<<< HEAD
+=======
+=======
+<!-- menu #########################################################################################################################################################-->
+	<div class="container">
+
+		<nav><h2  style="margin-left: -30px; color: white; font-family: verdana; "> Simulado online</h2> </nav>
+		<nav><img class="logo" src="images/icon2.png" style="padding-top: -20px; margin-left: -290px; width: 60px;"></nav>
+		<nav class="teste">
+
+			<ul>
+
+				<li>
+					<a href="" style="font-family: verdana;">PROFESSOR</a>
+				</li>
+				<li>
+					<a href="" style="font-family: verdana;">DICAS</a>
+				</li>
+				<li>
+					<a href="" style="font-family: verdana;">SOBRE</a>
+				</li>
+				<li>
+					<a href="menu.php" style="font-family: verdana; ">SAIR</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- cadastro ################################################################################################################################################-->
+	
+ <!--login ###################################################################################################################################################-->
+ 	    
+>>>>>>> c636d4625f453e010a0d83584ace27970b0361f9
+>>>>>>> f95aab6b1dfd2cb001887de962e59ac356367e38
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
 
 </body>
 </html>
