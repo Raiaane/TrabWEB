@@ -234,27 +234,24 @@
 	    </div>
 	    </form>
  <!--login ###################################################################################################################################################-->
-
+ <form>
 <div class="flex-container2" style="color: white;" >
 		<img src="images/icon4.png" style="width: 130px; height: 120px; margin-top: 320px; margin-left: 330px;">
-
-
 <!-- Login-->
-<form method="post">
     	<div class="loguin">
 				<div class="cadasnome2">
-					<center><label style="color: black; margin-top:40px; margin-left: -85px; font-family: verdana; ">Usuário</label></center>
-				<input type="text" name="user">
+					<center><label style="color: black; margin-top:40px; margin-left: -85px; font-family: verdana;">Usuário</label></center>
+				<input type="text" name="">
 				</div>
 		 
 				<div class="cadassenha2">
 					<center><label style="color: black; margin-top: 10px; margin-left: -85px; font-family: verdana">Senha</label> </center>
-				<input  type="password" name="pass">
+				<input  type="password" name="">
 		        </div>
 
 		        <div class="cadasemail2">
 					<center><label style="color: black; margin-top: 10px; margin-left: -80px; font-family: verdana">Email</label> </center>
-				<input  type="text" name="email">
+				<input  type="text" name="">
 		        </div>
 
 
@@ -294,35 +291,6 @@ if (!empty($nom)) {
 		echo "Falha no cadastro";
 	}
 }
-?>
-
-     <!--CODIGO DO LOGIN -->
-
-	<?php
-    if (isset($_POST['user']) && isset($_POST['pass'])) {
-
-        $sql_verificar_login_usuario = "SELECT * FROM aluno WHERE usuario = '".$_POST['user']."' and senha = '".$_POST['pass']."'";
-        $query_verificar_login_usuario = mysqli_query($conexao, $sql_verificar_login_usuario);
-
-        if (mysqli_num_rows($query_verificar_login_usuario) > 0) {
-            
-            $_SESSION['usuario'] = $_POST['user'];
-            header('location: aluno.php');
-
-        } else {
-
-            echo "<script>
-                    function ErroLogin(){
-
-                        document.getElementById('alerta').className = 'form-control alert alert-danger';
-                        document.getElementById('alerta').innerHTML = 'Usuário ou senha incorreto!';
-                        
-                    }
-                </script>";
-            
-        }
-
-    }
 ?>
 </body>
 </html>
