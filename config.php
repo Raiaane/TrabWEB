@@ -1,11 +1,15 @@
-<?php
+<?php 
+class Conexao{
+public function Con(){
+	try{
 
-define('HOST','localhost');
-define("USER","root");
-define("PASS","");
-define("DB","gerenciador");
+	   $pdo = new PDO('mysql:host=localhost; dbname=gerenciador','root','', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+     }catch(PDOException $e){
+        echo $e.getMessage();
+       } 
+    return $pdo;
+    }
+}
 
-$conexao = mysqli_connect(HOST, USER, PASS, DB);
-
-?>
+ ?>
 

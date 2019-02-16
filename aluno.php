@@ -39,7 +39,7 @@
 		height: 440px;
 		margin-left: 240px;
 		margin-top: 60px;
-
+}
 	
 
   
