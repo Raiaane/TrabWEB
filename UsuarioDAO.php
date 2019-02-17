@@ -29,6 +29,32 @@ class UsuarioDAO
             echo "<script>alert('Usuario nao cadastrado')</script>";
         }
     }
+
+    function Cadastro(Profess $Profess)
+    {
+        $con = new Conexao();
+        $stmtt = $con->Con();
+        $sqli = $stmtt->prepare("INSERT INTO professor (nome,email,telefone,usuario,senha,cpf) VALUES(?,?,?,?,?,?)");
+        $nome = $Profess->getNome();
+        $email = $Profess->getEmail();
+        $tel = $Profess->getTel();
+        $user = $Profess->getUser();
+        $pass = $Profess->getPass();
+        $cpf = $Profess->getCpf();
+
+        $sqli->bindParam(1, $nome);
+        $sqli->bindParam(2, $email);
+        $sqli->bindParam(3, $tel);
+        $sqli->bindParam(4, $user);
+        $sqli->bindParam(5, $pass);
+        $sqli->bindParam(6, $cpf);
+
+         if($sqli->execute()){
+            echo "<script>alert('Cadastrado com sucesso')</script>";
+        }else{
+            echo "<script>alert('Usuario nao cadastrado')</script>";
+        }
+    }
 }
 
     ?>
