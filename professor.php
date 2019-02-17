@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
+>>>>>>> ec8b98b372723946fbe01d4341a04491171e02fb
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +15,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
+<<<<<<< HEAD
+=======
   
 
   *{
@@ -27,6 +38,7 @@
         position: relative;
       }
 
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
   
       .menu ul li{
         width: 150px;
@@ -131,6 +143,50 @@
     margin-left: 250px;
     margin-top: 60px;
 
+<<<<<<< HEAD
+=======
+
+
+<<<<<<< HEAD
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  nav { display: flex;
+    flex-direction: row
+   }
+  .menu{
+    width: 100%;
+    height: 50px;
+    background-color: #48D1CC;
+    font-family: 'Arial';
+    position: relative;
+  }
+      .menu ul{
+        list-style: none;
+        position: relative;
+      }
+
+  
+=======
+  
+=======
+
+>>>>>>> f95aab6b1dfd2cb001887de962e59ac356367e38
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+  
+
+  *{
+    margin: 0;
+    padding: 0;
+>>>>>>> ec8b98b372723946fbe01d4341a04491171e02fb
   }
   .cadastroo{
     display:block;
@@ -201,6 +257,20 @@
     margin-left: 740px;
     margin-top: -440px;
   }
+<<<<<<< HEAD
+=======
+      .menu ul{
+        list-style: none;
+        position: relative;
+      }
+
+  
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
+      .menu ul li{
+        width: 150px;
+        float: left;
+      }
+>>>>>>> ec8b98b372723946fbe01d4341a04491171e02fb
 
   .loguin {
         margin-left:-90px;
@@ -214,6 +284,291 @@
     }
 
 
+   .cadasemail2{
+        margin-top: 30px;
+        margin-left: -25px;
+    width: 250px;
+    height: 25px;
+    }
+
+    .cadassenha2{
+        margin-top: 30px;
+        margin-left: -25px;
+    width: 250px;
+    height: 25px;
+    }
+
+    .cadastrese2{
+      margin-top: 130px;
+        margin-left: 280px;
+         width: 200px;
+    
+    }
+
+    .cadastresebutao2{
+      margin-top: -200px;
+        margin-left: -60px;
+
+    
+    }
+      .btn{
+        
+<<<<<<< HEAD
+        
+         margin-top: -40px;
+          margin-left: 60px; 
+          font-family: verdana;
+           width:150px; 
+           height: 30px;
+           text-transform: uppercase;
+           font-weight: 700;
+           border: none;
+           cursor: pointer;
+
+=======
+      }
+      .menu ul ul{
+        position: absolute;
+        visibility: hidden;
+
+      }
+      .menu ul li:hover ul{
+        visibility: visible;
+      }
+
+      .menu a:hover{
+        background-color: #F0E68C;
+        color: #555;
+
+      }
+
+      .menu ul ul li{
+        float: none;
+        border-bottom: solid 1px #ccc;
+<<<<<<< HEAD
+
+
+      }
+
+      .menu ul ul li a{
+        background-color: #F0E68C;
+      
+      }
+      label[for="bt_menu"]{
+        padding: 5px;
+        background-color: #48D1CC;
+        color: #fff;
+        font-family: "Arial";
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+      }
+      #bt_menu{
+        display: none;
+      }
+      label[for="bt_menu"]{
+        display: none;
+      }
+
+      @media(max-width: 800px){
+        label[for="bt_menu"]{
+        display: block;
+      }
+      #bt_menu:checked ~ .menu{
+        margin-left: 0;
+      }
+
+      nav h2{ visibility: hidden; display: none; }
+      .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+        width: 100%;
+      }
+          menu ul{
+            width: 100%;
+            float: none;
+          }
+          .menu ul li{
+            width: 100%;
+            float: left;
+          }
+          .menu ul ul{
+            position: static;
+            overflow: hidden;
+            max-height: 0;
+            transition: all .4s;
+          }
+          .menu ul li:hover ul{
+            height: auto;
+            max-height: 800px;
+          }
+      }
+      .flex-container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 400px;
+    height: 440px;
+    margin-left: 250px;
+    margin-top: 60px;
+
+  }
+  .cadastroo{
+    display:block;
+    margin-top:10px;
+        margin-left: -230px;
+  }
+  .cadasnome{
+=======
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
+
+      margin-top:20px;
+      margin-left: 155px;
+    width: 250px;
+    height: 25px;
+    }
+
+      }
+
+<<<<<<< HEAD
+     .cadastelefone {
+      margin-top: 10px;
+        margin-left: 155px;
+    width: 250px;
+    height: 25px;
+    }
+
+    .cadasusuario{
+      margin-top: 10px;
+        margin-left: 155px;
+    width: 250px;
+    height: 25px;
+    }
+
+    .cadassenha{
+        margin-top: 10px;
+       margin-left: 155px;
+    width: 250px;
+    height: 25px;
+    }
+
+    .cadasemail{
+        margin-top: 10px;
+        margin-left: 155px;
+    width: 250px;
+    height: 25px;
+    }
+
+    .cadascpf{
+      margin-top: 10px;
+        margin-left: 155px;
+    width: 250px;
+    height: 25px;
+    }
+
+    .cadastrese{
+      margin-top: 30px;
+       /* margin-left: 260px;*/
+    
+    }
+
+    .cadastresebutao{
+      margin-top: -230px;
+        margin-left: 260px;
+    
+    }
+.flex-container2{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 400px;
+    height: 440px;
+    margin-left: 740px;
+    margin-top: -440px;
+  }
+
+  .loguin {
+        margin-left:-90px;
+
+  }
+  .cadasnome2{
+      margin-top: 90px;
+      margin-left: -25px;
+    width: 250px;
+    height: 25px;
+    }
+=======
+      .menu ul ul li a{
+        background-color: #F0E68C;
+      
+>>>>>>> ec8b98b372723946fbe01d4341a04491171e02fb
+      }
+      .btn-yellow{
+        background-color: #FFFF50;
+        box-shadow: 0 5px 0 #CDCD00;
+      }
+      .btn-yellow:hover{
+        background-color:#CDCD00 ;
+        box-shadow: 0 5px 0 #F5F5DC;
+      }
+        .btn2{
+          background-color: #4682B4;
+           margin-top: 90px; 
+           margin-left: -650px;
+            font-family: verdana; 
+            width:150px; 
+            height: 30px;
+            text-transform: uppercase;
+           font-weight: 700;
+           border: none;
+           cursor: pointer;
+        }
+        .btn-blue{
+        background-color: #4682B4;
+        box-shadow: 0 5px 0 #B0C4DE;
+      }
+      .btn-blue:hover{
+        background-color:#B0C4DE ;
+        box-shadow: 0 5px 0 #4682B4;
+      }
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
+
+<<<<<<< HEAD
+</style>
+<body background="images/fundo4.jpg">
+
+=======
+      nav h2{ visibility: hidden; display: none; }
+      .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+        width: 100%;
+      }
+          menu ul{
+            width: 100%;
+            float: none;
+          }
+          .menu ul li{
+            width: 100%;
+            float: left;
+          }
+          .menu ul ul{
+            position: static;
+            overflow: hidden;
+            max-height: 0;
+            transition: all .4s;
+          }
+          .menu ul li:hover ul{
+            height: auto;
+            max-height: 800px;
+          }
+      }
+
+<<<<<<< HEAD
    .cadasemail2{
         margin-top: 30px;
         margin-left: -25px;
@@ -283,10 +638,28 @@
         background-color:#B0C4DE ;
         box-shadow: 0 5px 0 #4682B4;
       }
+=======
+
+
+<<<<<<< HEAD
+  
+=======
+	
+>>>>>>> c636d4625f453e010a0d83584ace27970b0361f9
+>>>>>>> f95aab6b1dfd2cb001887de962e59ac356367e38
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
 
 </style>
 <body background="images/fundo4.jpg">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f95aab6b1dfd2cb001887de962e59ac356367e38
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
+>>>>>>> ec8b98b372723946fbe01d4341a04491171e02fb
 <!-- menu ######################################-->
 <div class="container">
         
@@ -339,6 +712,10 @@
       </ul>
     </nav> -->
 </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ec8b98b372723946fbe01d4341a04491171e02fb
 <style type="text/css">
   div.resp form{
     display: flex;
@@ -436,6 +813,7 @@
  <!-- ###################################################################################################################################################-->      
 <?php
       include_once('UsuarioDAO.php');
+<<<<<<< HEAD
       include_once ('Profess.php');
       
       $Insere = new UsuarioDAO();
@@ -452,9 +830,37 @@
   }
   ?>
 
+=======
+      include_once ('Usuario.php');
+      
+      $Insere = new UsuarioDAO();
+      $usuario =  new Usuario();
+      if(isset($_POST['enviar'])){
+      $usuario->setNome($_POST['nome']);
+      $usuario->setTel($_POST['telef']);
+      $usuario->setUser($_POST['usuario']);
+      $usuario->setPass($_POST['senha']);
+      $usuario->setEmail($_POST['email']);
+      $usuario->setCpf($_POST['cpf']);
+
+      $Insere->Cadastra($usuario);
+  }
+  ?>
 
  <!--login ###################################################################################################################################################-->
 
+=======
+>>>>>>> ec8b98b372723946fbe01d4341a04491171e02fb
+
+ <!--login ###################################################################################################################################################-->
+<<<<<<< HEAD
+
+=======
+ 	    
+>>>>>>> c636d4625f453e010a0d83584ace27970b0361f9
+>>>>>>> f95aab6b1dfd2cb001887de962e59ac356367e38
+>>>>>>> 41ea629437a7a110925e57a0919e18a6adfcab28
+>>>>>>> ec8b98b372723946fbe01d4341a04491171e02fb
 
 </body>
 </html>
