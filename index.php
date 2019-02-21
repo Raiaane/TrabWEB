@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Simulado Online</title>
+	<title></title>
 </head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style type="text/css">
 	
 
@@ -163,8 +162,8 @@
     }
 
     .cadassenha{
-    margin-top: 10px;
-    margin-left: 155px;
+        margin-top: 10px;
+       margin-left: 155px;
 		width: 250px;
 		height: 25px;
     }
@@ -247,6 +246,53 @@
 		
     }
 
+.btn{
+        
+        
+         margin-top: -40px;
+          margin-left: 60px; 
+          font-family: verdana;
+           width:150px; 
+           height: 40px;
+           text-transform: uppercase;
+           font-weight: 700;
+           border: none;
+           cursor: pointer;
+
+      }
+      .btn-yellow{
+        background-color: #FFFF50;
+        box-shadow: 0 5px 0 #CDCD00;
+      }
+      .btn-yellow:hover{
+        background-color:#CDCD00 ;
+        box-shadow: 0 5px 0 #F5F5DC;
+      }
+        .btn2{
+          background-color: #4682B4;
+           margin-top: 90px; 
+           margin-left: -650px;
+            font-family: verdana; 
+            width:150px; 
+            height: 40px;
+            text-transform: uppercase;
+           font-weight: 700;
+           border: none;
+           cursor: pointer;
+        }
+        .btn-blue{
+        background-color: #4682B4;
+        box-shadow: 0 5px 0 #B0C4DE;
+         margin-top: 90px;
+         margin-left: -650px;
+          font-family: verdana;
+           width:150px; 
+           height: 40px;
+      }
+      .btn-blue:hover{
+        background-color:#B0C4DE ;
+        box-shadow: 0 5px 0 #4682B4;
+      }
 
 
 </style>
@@ -261,11 +307,11 @@
 		<nav class="menu" >
 		<h2  style="width: 230px; border: 1px; margin-left: 10px; color: white; font-family: verdana; display: inline-block; margin-top: 10px; background-color: #48D1CC; ">Simulado Online</h2>
 			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="index.php">Aluno</a>
+				<li><a href="">Home</a></li>
+				<li><a href="indexalu.php">Aluno</a>
 					<ul>
-						<li><a href="index.php"><?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Cadastro</a></li>
-						<li><a href="index.php"> <?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Login</a></li>
+						<li><a href="">Cadastro</a></li>
+						<li><a href="">Login</a></li>
 					</ul>
 				</li>
 				<li><a href="professor.php">Professor</a>
@@ -299,45 +345,48 @@
 		
 	    	<div class="cadastroo">
 	       
-	       		<label style="color: black; margin-top:90px; margin-left:180px; font-family: verdana;"><b><i>CADASTRE-SE</i></b></label><br>
+	       		<label style="color: black; margin-top:90px; margin-left:180px; font-family: System; width: 290px;
+    height: 25px;" ><b>CADASTRE-SE</b></label><br>
 		
 
 				<div class="cadasnome">
-					<label style="color: black; margin-left:60px; font-family: verdana;">Nome</label><br>
+					<label style="color: black; margin-left:60px; font-family: verdana;"><b>Nome</b></label><br>
 				<input type="text" name="nome">
 				</div><br>
 
 				<div class="cadastelefone">
-					<center><label style="color: black;  margin-left:-80px; font-family: verdana;">Telefone</label><br></center>
+					<center><label style="color: black;  margin-left:-80px; font-family: verdana;"><b>Telefone</b></label><br></center>
 				<input type="text" name="telef">
 				</div><br>
 
 				<div class="cadasusuario">
-					<center><label style="color: black;  margin-left:-85px;  font-family: verdana;">Usuário</label><br></center>
+					<center><label style="color: black;  margin-left:-85px;  font-family: verdana;"><b>Usuário</b></label><br></center>
 				<input type="text" name="usuario">
 				</div><br>
 		 
 				<div class="cadassenha">
-					<center><label style="color: black; margin-left:-85px;   font-family: verdana">Senha</label><br> </center>
+					<center><label style="color: black; margin-left:-85px;   font-family: verdana"><b>Senha</b></label><br> </center>
 				<input  type="password" name="senha">
 		        </div><br>
 
 		        <div class="cadasemail">
-					<center><label style="color: black;  margin-left:-85px;  font-family: verdana">Email</label><br> </center>
+					<center><label style="color: black;  margin-left:-85px;  font-family: verdana"><b>Email</b></label><br> </center>
 				<input  type="text" name="email">
 		        </div><br>
 
 		        <div class="cadascpf">
-					<center><label style="color: black;  margin-left:-85px;  font-family: verdana">CPF</label> <br> </center>
+					<center><label style="color: black;  margin-left:-85px;  font-family: verdana"><b>CPF</b></label> <br> </center>
 				<input  type="text" name="cpf">
 		        </div><br>
 
 			    <div class="cadastrese">
-				<center> <button type="submit" value="enviar" type="submit" name="enviar" style="background-color: #FFFF50; margin-top: -40px; margin-left: 60px; font-family: verdana; width:150px; height: 30px;"><b>CADASTRE-SE</b></button>
+				<center> <button type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
 			     </center></div>
 
 			</div>
 	</div>
+    <!-- </div>
+	    </div> -->
 </form>
  <!--login ###################################################################################################################################################-->
 <form>
@@ -349,27 +398,27 @@
 
 	    	<div class="loguin">
 					<div class="cadasnome2">
-						<center><label style="color: black; margin-top:40px; margin-left: -85px; font-family: verdana; ">Usuário</label></center>
+						<center><label style="color: black; margin-top:40px; margin-left: -85px; font-family: verdana; "><b>Usuário</b></label></center>
 					<input type="text" name="user">
 					</div>
 			 
 					<div class="cadassenha2">
-						<center><label style="color: black; margin-top: 10px; margin-left: -85px; font-family: verdana">Senha</label> </center>
+						<center><label style="color: black; margin-top: 10px; margin-left: -85px; font-family: verdana"><b>Senha</b></label> </center>
 					<input  type="password" name="pass">
 			        </div>
 
 			        <div class="cadasemail2">
-						<center><label style="color: black; margin-top: 10px; margin-left: -80px; font-family: verdana">Email</label> </center>
+						<center><label style="color: black; margin-top: 10px; margin-left: -80px; font-family: verdana"><b>Email</b></label> </center>
 					<input  type="text" name="email">
 			        </div>
 
 
 			         <div class="cadastresebutao2">
-					 <center><label style="color: black; margin-top: -200px; margin-left: -300px; font-family: verdana;"><b><i>LOGIN</i></b></label> </center>
+					 <center><label style="color: black; margin-top: -200px; margin-left: -300px; font-family: System;"><b>LOGIN</b></label> </center>
 				    </div> 
 
 				    <div class="cadastrese2">
-					 <center><button style="background-color: #4682B4; margin-top: 90px; margin-left: -650px; font-family: verdana; width:150px; height: 30px; "><b>LOGIN</b></button></center>
+					 <center><button class="btn btn-blue"><b>LOGIN</b></button></center>
 				    </div>
 		    </div>
 		</form>
