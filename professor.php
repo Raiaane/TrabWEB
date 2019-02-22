@@ -141,8 +141,13 @@
         box-shadow: 0 5px 0 #CDCD00;
          margin-top: -30px;
         margin-left: 10px;
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
       }
       .btn-yellow:hover{
         background-color:#CDCD00 ;
@@ -187,8 +192,13 @@
     <nav class="menu" >
     <h2  style="width: 230px; border: 1px; margin-left: 10px; color: white; font-family: verdana; display: inline-block; margin-top: 10px; background-color: #48D1CC; ">Simulado Online</h2>
       <ul>
+<<<<<<< HEAD
         <li><a href="index.php">Home</a></li>
         <li><a href="indexalu.php">Aluno</a>
+=======
+        <li><a href="">Home</a></li>
+        <li><a href="alunoo.php">Aluno</a>
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
           <ul>
             <li><a href="">Cadastro</a></li>
             <li><a href="">Login</a></li>
@@ -307,6 +317,25 @@
 
  
 
+<<<<<<< HEAD
+=======
+  /*@media(max-width: 800px){
+        label[for="resp"]{
+        display: block;
+      }
+   @media(min-width: 100px){
+        label[for="resp"]{
+        display: block;
+      }
+@media(max-height: 100px){
+        label[for="resp"]{
+        display: block;
+      }
+   @media(min-height: 100px){
+        label[for="resp"]{
+        display: block;
+      }*/
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
 </style>
 
 

@@ -122,7 +122,33 @@
             max-height: 800px;
           }
       }
+<<<<<<< HEAD
       
+=======
+      .formulario{
+      	background-color: white;
+      	margin-top:25px;
+      	margin-left: 260px;
+      	border-radius: 40px;
+      	width: 900px;
+      	height: 650px;
+      }
+
+    .formulario input{
+    	margin-top: 25px;
+    	margin-left: 140px;
+    	width: 600px;
+    	height: 40px;
+    }  
+
+    .formulario label{
+    	font-size: 25px;
+    	margin-top: 45px;
+    	margin-left: 380px;
+    	font-family: System;
+    	height: 40px;
+    }  
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
     .btn{
           background-color: #4682B4;
            
@@ -137,7 +163,11 @@
         .btn-blue{
         background-color: #4682B4;
         box-shadow: 0 5px 0 #B0C4DE;
+<<<<<<< HEAD
         
+=======
+         
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
           font-family: verdana;
            width:150px; 
            height: 40px;
@@ -148,6 +178,7 @@
       }
 
 </style>
+<<<<<<< HEAD
 
 <style type="text/css">
   .formulario{
@@ -208,6 +239,9 @@
 
 <body background="images/fundo4.jpg">
 
+=======
+<body background="images/fundo4.jpg">
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
 	<div class="container">
         
             <input type="checkbox" id="bt_menu">
@@ -219,17 +253,29 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="index.php">Aluno</a>
                               <ul>
+<<<<<<< HEAD
                                     <!-- <li><a href="index.php"><?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Cadastro</a></li>
                                     <li><a href="index.php"> <?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Login</a></li> -->
+=======
+                                    <li><a href="index.php"><?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Cadastro</a></li>
+                                    <li><a href="index.php"> <?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Login</a></li>
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
                               </ul>
                         </li>
                         <li><a href="professor.php">Professor</a>
                         <ul>
+<<<<<<< HEAD
                                     <li><a href="cadasprova.php">Provas</a></li>
                                     <li><a href="">Gabaritos</a></li>
                               </ul></li>
                         <li><a href="">Dicas</a></li>
                         <li><a href="">Sair</a></li>
+=======
+                                    <li><a href="">Provas</a></li>
+                                    <li><a href="">Gabaritos</a></li>
+                              </ul></li>
+                        <li><a href="">Dicas</a></li>
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
 
                     
                   </ul>
@@ -238,6 +284,7 @@
             </nav>
 
 </div>
+<<<<<<< HEAD
 <style type="text/css">
 @media(max-width: 2000px){
   .form-questao {
@@ -288,6 +335,32 @@
 	
 </div>
 </center>
+=======
+
+<div class="formulario">
+
+    <form>
+    	
+    	<label><b><i>Questão</b></i></label><br>
+    	<input type="quetao" name="quetao"><br>
+    	<label>Alternativa a</label><br>
+    	<input type="altea" name="alternativaa"><br>
+    	<label>Alternativa b</label><br>
+    	<input type="alteb" name="alternativab"><br>
+        <label>Alternativa c</label><br>
+    	<input type="altec" name="alternativac"><br>
+    	<label>Alternativa d</label><br>
+    	<input type="alted" name="alternativad"><br>
+    	<label>Gabarito</label><br>
+
+
+    	<input type="gabar" name="gabarito"><br>
+<img src="images/icon20.png" style="width: 130px; height: 120px; margin-top: -180px; margin-left: 10px;">
+<center> <button type="submit" value="enviar" type="submit" name="enviar" class="btn btn-blue"><b>Cadastrar questão</b></button>
+    </form>
+	
+</div>
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
 
 </body>
 </html>

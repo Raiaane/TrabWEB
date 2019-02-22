@@ -184,11 +184,16 @@
 		<nav class="menu" >
 		<h2  style="width: 230px; border: 1px; margin-left: 10px; color: white; font-family: verdana; display: inline-block; margin-top: 10px; background-color: #48D1CC; ">Simulado Online</h2>
 			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="index.php">Aluno</a>
+				<li><a href="">Home</a></li>
+				<li><a href="alunoo.php">Aluno</a>
 					<ul>
+<<<<<<< HEAD
 						<li><a href="index.php">Cadastro</a></li>
 						<li><a href="index.php">Login</a></li>
+=======
+						<li><a href="">Cadastro</a></li>
+						<li><a href="">Login</a></li>
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
 					</ul>
 				</li>
 				<li><a href="professor.php">Professor</a>
@@ -301,6 +306,28 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+
+ 
+
+  /*@media(max-width: 800px){
+        label[for="resp"]{
+        display: block;
+      }
+   @media(min-width: 100px){
+        label[for="resp"]{
+        display: block;
+      }
+@media(max-height: 100px){
+        label[for="resp"]{
+        display: block;
+      }
+   @media(min-height: 100px){
+        label[for="resp"]{
+        display: block;
+      }*/
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
 </style>
 
 
@@ -350,6 +377,21 @@
     <label style="color: black; font-family: verdana" for="senha"><b>Senha</b></label><br>
     <input  style="width:200px; height:20px;" type="text" name="senha"><br>  
     
+<<<<<<< HEAD
+=======
+    
+    <!-- 
+
+    <label style="color: black; font-family: verdana;"><b>Usuário</b></label><br>
+    <input  style="width:200px; height:20px;" type="text" name="user">
+                    
+    <label style="color: black;  font-family: verdana"><b>Email</b></label><br> 
+    <input  style="width:200px; height:20px;" type="text" name="email">
+
+    <label style="color: black; font-family: verdana"><b>Senha</b></label> <br>
+    <input  style="width:200px; height:20px;"  type="password" name="pass"> -->
+       
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
     <button class="btn btn-blue"><b>LOGIN</b></button><br>
     <!-- <img src="images/icon4.png" style="width: 130px; height: 120px;  position: absolute; ">  -->
   </form>
@@ -384,3 +426,59 @@
 </html>
 
   
+<<<<<<< HEAD
+=======
+<!-- <div class="resp" >
+
+   <form method="post">
+   <img src="images/ask2.png" style="width: 130px; height: 120px;  margin-left: 50px;">
+         
+   <label style="color: black;  margin-left:180px; font-family: System; width: 90px;
+    height: 25px;" ><b>CADASTRE-SE</b></label><br>
+  
+    <label style="color: black; font-family: verdana;"><b>Nome</b></label><br>
+    <input  style="width:200px; height:20px;" type="text" name="nome"><br>  
+
+    <label style="color: black;   font-family: verdana;"><b>Telefone</b></label><br>
+    <input style="width:200px; height:20px;" type="text" name="telef"><br>
+    
+    <label style="color: black;    font-family: verdana;"><b>Usuário</b></label><br>
+    <input style="width:200px; height:20px;"type="text" name="usuario"><br>
+     
+    <label style="color: black;    font-family: verdana"><b>Senha</b></label><br> 
+    <input style="width:200px; height:20px;" type="password" name="senha"><br>
+
+    <label style="color: black;    font-family: verdana"><b>Email</b></label><br> 
+    <input style="width:200px; height:20px;" type="text" name="email"> <br>
+
+    <label style="color: black;    font-family: verdana"><b>CPF</b></label> <br> </center>
+    <input  style="width:200px; height:20px;"type="text" name="cpf"><br>
+ 
+    <button type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
+
+</form>
+</div>         
+
+      
+     <div class="resp2">
+    
+ Login
+      <form method="post">
+  
+        <label style="color: black;  margin-left: -85px; font-family: verdana; "><b>Usuário</b></label>
+        <input  style="width:200px; height:20px;" type="text" name="user">
+            
+        <label style="color: black;  margin-left: -85px; font-family: verdana"><b>Senha</b></label> 
+        <input  style="width:200px; height:20px;"  type="password" name="pass">
+               
+        <label style="color: black;  font-family: verdana"><b>Email</b></label> 
+        <input  style="width:200px; height:20px;"  type="text" name="email">
+        
+        <label style="color: black; margin-top: -200px; margin-left: -300px; font-family: System;"><b>LOGIN</b></label> 
+
+        <button class="btn btn-blue"><b>LOGIN</b></button>
+
+      </form>
+    </div>
+</div> -->
+>>>>>>> 0747237458236b574d67d75050af70a917cd860f
