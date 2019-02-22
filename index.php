@@ -123,132 +123,7 @@
       		}
       }
 
-	.flex-container{
-		display: flex;
-		justify-content: center;
-		background-color: white;
-		width: 300px;
-		height: 440px;
-		margin-left: 240px;
-		margin-top: 60px;
-
-	}
-	.cadastroo{
-		display:block;
-		margin-top:10px;
-        margin-left: -230px;
-	}
-	.cadasnome{
-
-    	margin-top:20px;
-    	margin-left: 155px;
-		width: 250px;
-		height: 25px;
-    }
-
-
-     .cadastelefone {
-    	margin-top: 10px;
-        margin-left: 155px;
-		width: 250px;
-		height: 25px;
-    }
-
-    .cadasusuario{
-    	margin-top: 10px;
-        margin-left: 155px;
-		width: 250px;
-		height: 25px;
-    }
-
-    .cadassenha{
-        margin-top: 10px;
-       margin-left: 155px;
-		width: 250px;
-		height: 25px;
-    }
-
-    .cadasemail{
-        margin-top: 10px;
-        margin-left: 155px;
-		width: 250px;
-		height: 25px;
-    }
-
-    .cadascpf{
-    	margin-top: 10px;
-        margin-left: 155px;
-		width: 250px;
-		height: 25px;
-    }
-
-    .cadastrese{
-    	margin-top: 30px;
-       /* margin-left: 260px;*/
-		
-    }
-
-    .cadastresebutao{
-    	margin-top: -230px;
-        margin-left: 260px;
-		
-    }
-
-
-
-    .flex-container2{
-		display: flex;
-		justify-content: center;
-		background-color: white;
-		width: 300px;
-		height: 440px;
-		margin-left: 790px;
-		margin-top: -440px;
-	}
-
-	.loguin {
-        margin-left:-90px;
-
-	}
-	.cadasnome2{
-    	margin-top: 90px;
-    	margin-left: -25px;
-		width: 250px;
-		height: 25px;
-    }
-
-
-   .cadasemail2{
-        margin-top: 30px;
-        margin-left: -25px;
-		width: 250px;
-		height: 25px;
-    }
-
-    .cadassenha2{
-        margin-top: 30px;
-        margin-left: -25px;
-		width: 250px;
-		height: 25px;
-    }
-
-    .cadastrese2{
-    	margin-top: 130px;
-        margin-left: 280px;
-         width: 200px;
-		
-    }
-
-    .cadastresebutao2{
-    	margin-top: -200px;
-        margin-left: -60px;
-
-		
-    }
-
 .btn{
-        
-        
          margin-top: -40px;
           margin-left: 60px; 
           font-family: verdana;
@@ -259,10 +134,12 @@
            border: none;
            cursor: pointer;
 
+
       }
       .btn-yellow{
         background-color: #FFFF50;
         box-shadow: 0 5px 0 #CDCD00;
+
       }
       .btn-yellow:hover{
         background-color:#CDCD00 ;
@@ -284,7 +161,7 @@
         background-color: #4682B4;
         box-shadow: 0 5px 0 #B0C4DE;
          margin-top: 90px;
-         margin-left: -650px;
+         /*margin-left: -650px;*/
           font-family: verdana;
            width:150px; 
            height: 40px;
@@ -308,7 +185,7 @@
 		<h2  style="width: 230px; border: 1px; margin-left: 10px; color: white; font-family: verdana; display: inline-block; margin-top: 10px; background-color: #48D1CC; ">Simulado Online</h2>
 			<ul>
 				<li><a href="">Home</a></li>
-				<li><a href="indexalu.php">Aluno</a>
+				<li><a href="alunoo.php">Aluno</a>
 					<ul>
 						<li><a href="">Cadastro</a></li>
 						<li><a href="">Login</a></li>
@@ -329,103 +206,190 @@
 
 </div>
 
-	<!-- cadastro ################################################################################################################################################-->
+
 <style type="text/css">
-	div.resp form{
+    .resp{
+      display: inline-block;
+    }
+
+     @media(max-width: 2000px){
+      .resp{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        height: 400px;
+       
+      }
+    }
+
+    @media(max-width: 1000px){
+      .resp {
+        width:300px;
+        height: 400px;
+       display: flex; flex: 1; flex-direction: column;
+      }
+    }
+
+   .cadastro, .login{
+    background-color:rgb(255,255,255);
+    border-radius: 30px;
+    
+   }
+
+   .cadastro{
+    margin: 30px 15%;
+   }
+
+
+   @media(max-width: 2000px){
+      .cadastro {
+        width:300px;
+        height: 400px;
+       
+      }
+    }
+
+    @media(max-width: 1000px){
+      .cadastro {
+        width:300px;
+        height: 400px;
+       
+      }
+    }
+
+
+  }
+	div.cadastro form{
 		display: flex;
 		flex-wrap: wrap;
 		flex-wrap: row wrap;
 	}
+
+  div.login form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: row wrap;
+  }
+
+  .login{
+    background-color:rgb(255,255,255);
+    border-radius: 30px;
+   }
+
+
+   @media(max-width: 2000px){
+      .login {
+        width:300px;
+        height: 270px;
+       
+      }
+    }
+
+    @media(max-width: 1000px){
+      .login{
+        width:300px;
+        height: 270px;
+       
+      }
+    }
+
+  }
+  div.login form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: row wrap;
+  }
+}
+
+
+ 
+
+  /*@media(max-width: 800px){
+        label[for="resp"]{
+        display: block;
+      }
+   @media(min-width: 100px){
+        label[for="resp"]{
+        display: block;
+      }
+@media(max-height: 100px){
+        label[for="resp"]{
+        display: block;
+      }
+   @media(min-height: 100px){
+        label[for="resp"]{
+        display: block;
+      }*/
 </style>
 
-	<div class="resp">
-<form method="post">
-	<div class="flex-container" style="color: white; "  >
-		<img src="images/ask2.png" style="width: 130px; height: 120px; margin-top: 310px; margin-left: 50px;">
-		
-	    	<div class="cadastroo">
-	       
-	       		<label style="color: black; margin-top:90px; margin-left:180px; font-family: System; width: 290px;
+
+<div class="resp" style="">
+  
+ <div class="cadastro"> 
+  <center>
+    <form method="post">
+  
+         
+   <label style="color: black; font-family: System; width: 90px;
     height: 25px;" ><b>CADASTRE-SE</b></label><br>
-		
+  
+    <label style="color: black; font-family: verdana;"><b>Nome</b></label><br>
+    <input  style="width:200px; height:20px;" type="text" name="nome"><br>  
 
-				<div class="cadasnome">
-					<label style="color: black; margin-left:60px; font-family: verdana;"><b>Nome</b></label><br>
-				<input type="text" name="nome">
-				</div><br>
+    <label style="color: black; font-family: verdana;"><b>Telefone</b></label><br>
+    <input style="width:200px; height:20px;" type="text" name="telef"><br>
+    
+    <label style="color: black; font-family: verdana;"><b>Usuário</b></label><br>
+    <input style="width:200px; height:20px;"type="text" name="usuario"><br>
+     
+    <label style="color: black; font-family: verdana"><b>Senha</b></label><br> 
+    <input style="width:200px; height:20px;" type="password" name="senha"><br>
 
-				<div class="cadastelefone">
-					<center><label style="color: black;  margin-left:-80px; font-family: verdana;"><b>Telefone</b></label><br></center>
-				<input type="text" name="telef">
-				</div><br>
-
-				<div class="cadasusuario">
-					<center><label style="color: black;  margin-left:-85px;  font-family: verdana;"><b>Usuário</b></label><br></center>
-				<input type="text" name="usuario">
-				</div><br>
-		 
-				<div class="cadassenha">
-					<center><label style="color: black; margin-left:-85px;   font-family: verdana"><b>Senha</b></label><br> </center>
-				<input  type="password" name="senha">
-		        </div><br>
-
-		        <div class="cadasemail">
-					<center><label style="color: black;  margin-left:-85px;  font-family: verdana"><b>Email</b></label><br> </center>
-				<input  type="text" name="email">
-		        </div><br>
-
-		        <div class="cadascpf">
-					<center><label style="color: black;  margin-left:-85px;  font-family: verdana"><b>CPF</b></label> <br> </center>
-				<input  type="text" name="cpf">
-		        </div><br>
-
-			    <div class="cadastrese">
-				<center> <button type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
-			     </center></div>
-
-			</div>
-	</div>
-    <!-- </div>
-	    </div> -->
-</form>
- <!--login ###################################################################################################################################################-->
-<form>
-	<div class="flex-container2" style="color: white;" >
-		<img src="images/icon4.png" style="width: 130px; height: 120px; margin-top: 320px; margin-left: 330px;">
-
-<!-- Login-->
-		<form method="post">
-
-	    	<div class="loguin">
-					<div class="cadasnome2">
-						<center><label style="color: black; margin-top:40px; margin-left: -85px; font-family: verdana; "><b>Usuário</b></label></center>
-					<input type="text" name="user">
-					</div>
-			 
-					<div class="cadassenha2">
-						<center><label style="color: black; margin-top: 10px; margin-left: -85px; font-family: verdana"><b>Senha</b></label> </center>
-					<input  type="password" name="pass">
-			        </div>
-
-			        <div class="cadasemail2">
-						<center><label style="color: black; margin-top: 10px; margin-left: -80px; font-family: verdana"><b>Email</b></label> </center>
-					<input  type="text" name="email">
-			        </div>
+    <label style="color: black; font-family: verdana; z-index: 99"  ><b>Email</b></label><br> 
+    <input style="width:200px; height:20px;  z-index: 9" type="text" name="email"> <br>
+ <!-- <img src="images/ask2.png" style="width: 130px; height: 120px;   position: absolute; "> --> 
+    <label style="color: black; font-family: verdana ; z-index: 99"><b>CPF</b></label> <br> 
+    <input  style="width:200px; height:20px; z-index: 99 "type="text" name="cpf"><br>
+ 
+    <button style="z-index: 99; margin-top: 40px;  "type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
+    
+  </form>
+  </center>
+ </div>
 
 
-			         <div class="cadastresebutao2">
-					 <center><label style="color: black; margin-top: -200px; margin-left: -300px; font-family: System;"><b>LOGIN</b></label> </center>
-				    </div> 
+<div class="cadastro" style="">
+  <center>
+  <form method="post">
+    <legend style="color: black; font-family: System;"><b>LOGIN</b></legend><br>
 
-				    <div class="cadastrese2">
-					 <center><button class="btn btn-blue"><b>LOGIN</b></button></center>
-				    </div>
-		    </div>
-		</form>
-	</div>
-</form>
+    <label style="color: black; font-family: verdana;" for="usuario"><b>Usuário</b></label><br>
+    <input style="width:200px; height:20px;"type="text" name="usuario"><br>
+
+    <label style="color: black; font-family: verdana" for="senha"><b>Senha</b></label><br>
+    <input  style="width:200px; height:20px;" type="text" name="senha"><br>  
+    
+    
+    <!-- 
+
+    <label style="color: black; font-family: verdana;"><b>Usuário</b></label><br>
+    <input  style="width:200px; height:20px;" type="text" name="user">
+                    
+    <label style="color: black;  font-family: verdana"><b>Email</b></label><br> 
+    <input  style="width:200px; height:20px;" type="text" name="email">
+
+    <label style="color: black; font-family: verdana"><b>Senha</b></label> <br>
+    <input  style="width:200px; height:20px;"  type="password" name="pass"> -->
+       
+    <button class="btn btn-blue"><b>LOGIN</b></button><br>
+    <!-- <img src="images/icon4.png" style="width: 130px; height: 120px;  position: absolute; ">  -->
+  </form>
+  </center>
 </div>
- <!-- ###################################################################################################################################################-->	    
+
+
+</div>
+   
 <?php
       include_once('UsuarioDAO.php');
       include_once ('Usuario.php');
@@ -449,3 +413,58 @@
 
 </body>
 </html>
+
+  
+<!-- <div class="resp" >
+
+   <form method="post">
+   <img src="images/ask2.png" style="width: 130px; height: 120px;  margin-left: 50px;">
+         
+   <label style="color: black;  margin-left:180px; font-family: System; width: 90px;
+    height: 25px;" ><b>CADASTRE-SE</b></label><br>
+  
+    <label style="color: black; font-family: verdana;"><b>Nome</b></label><br>
+    <input  style="width:200px; height:20px;" type="text" name="nome"><br>  
+
+    <label style="color: black;   font-family: verdana;"><b>Telefone</b></label><br>
+    <input style="width:200px; height:20px;" type="text" name="telef"><br>
+    
+    <label style="color: black;    font-family: verdana;"><b>Usuário</b></label><br>
+    <input style="width:200px; height:20px;"type="text" name="usuario"><br>
+     
+    <label style="color: black;    font-family: verdana"><b>Senha</b></label><br> 
+    <input style="width:200px; height:20px;" type="password" name="senha"><br>
+
+    <label style="color: black;    font-family: verdana"><b>Email</b></label><br> 
+    <input style="width:200px; height:20px;" type="text" name="email"> <br>
+
+    <label style="color: black;    font-family: verdana"><b>CPF</b></label> <br> </center>
+    <input  style="width:200px; height:20px;"type="text" name="cpf"><br>
+ 
+    <button type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
+
+</form>
+</div>         
+
+      
+     <div class="resp2">
+    
+ Login
+      <form method="post">
+  
+        <label style="color: black;  margin-left: -85px; font-family: verdana; "><b>Usuário</b></label>
+        <input  style="width:200px; height:20px;" type="text" name="user">
+            
+        <label style="color: black;  margin-left: -85px; font-family: verdana"><b>Senha</b></label> 
+        <input  style="width:200px; height:20px;"  type="password" name="pass">
+               
+        <label style="color: black;  font-family: verdana"><b>Email</b></label> 
+        <input  style="width:200px; height:20px;"  type="text" name="email">
+        
+        <label style="color: black; margin-top: -200px; margin-left: -300px; font-family: System;"><b>LOGIN</b></label> 
+
+        <button class="btn btn-blue"><b>LOGIN</b></button>
+
+      </form>
+    </div>
+</div> -->
