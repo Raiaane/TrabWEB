@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Cadastro Professor</title>
 </head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -141,13 +141,8 @@
         box-shadow: 0 5px 0 #CDCD00;
          margin-top: -30px;
         margin-left: 10px;
-<<<<<<< HEAD
 
 
-=======
-
-
->>>>>>> 0747237458236b574d67d75050af70a917cd860f
       }
       .btn-yellow:hover{
         background-color:#CDCD00 ;
@@ -192,16 +187,11 @@
     <nav class="menu" >
     <h2  style="width: 230px; border: 1px; margin-left: 10px; color: white; font-family: verdana; display: inline-block; margin-top: 10px; background-color: #48D1CC; ">Simulado Online</h2>
       <ul>
-<<<<<<< HEAD
         <li><a href="index.php">Home</a></li>
-        <li><a href="indexalu.php">Aluno</a>
-=======
-        <li><a href="">Home</a></li>
-        <li><a href="alunoo.php">Aluno</a>
->>>>>>> 0747237458236b574d67d75050af70a917cd860f
+        <li><a href="index.php">Aluno</a>
           <ul>
-            <li><a href="">Cadastro</a></li>
-            <li><a href="">Login</a></li>
+            <li><a href="index.php">Cadastro</a></li>
+            <li><a href="index.php">Login</a></li>
           </ul>
         </li>
         <li><a href="professor.php">Professor</a>
@@ -314,92 +304,65 @@
   }
 }
 
-
- 
-
-<<<<<<< HEAD
-=======
-  /*@media(max-width: 800px){
-        label[for="resp"]{
-        display: block;
-      }
-   @media(min-width: 100px){
-        label[for="resp"]{
-        display: block;
-      }
-@media(max-height: 100px){
-        label[for="resp"]{
-        display: block;
-      }
-   @media(min-height: 100px){
-        label[for="resp"]{
-        display: block;
-      }*/
->>>>>>> 0747237458236b574d67d75050af70a917cd860f
 </style>
 
 
-<div class="resp" style="">
-  
- <div class="cadastro"> 
-  <center>
+  <div class="resp">
+   <div class="cadastro"> 
+    <center>
     <form method="post">
   
          
-   <label style="color: black; font-family: System; width: 90px;
-    height: 25px;" ><b>CADASTRE-SE</b></label><br>
-  
-    <label style="color: black; font-family: verdana;"><b>Nome</b></label><br>
-    <input  style="width:200px; height:20px;" type="text" name="nome"><br>
-
-    <label style="color: black; font-family: verdana; z-index: 99"  ><b>Email</b></label><br>  
-    <input style="width:200px; height:20px;  z-index: 9" type="text" name="email"> <br>
-
-    <label style="color: black; font-family: verdana;"><b>Telefone</b></label><br>
-    <input style="width:200px; height:20px;" type="text" name="telef"><br>
+     <label style="color: black; font-family: System; width: 90px;
+      height: 25px;" ><b>CADASTRE-SE</b></label><br>
     
-    <label style="color: black; font-family: verdana;"><b>Usuário</b></label><br>
-    <input style="width:200px; height:20px;"type="text" name="usuario"><br>
-     
-    <label style="color: black; font-family: verdana"><b>Senha</b></label><br> 
-    <input style="width:200px; height:20px;" type="password" name="senha"><br>
+      <label style="color: black; font-family: verdana;"><b>Nome</b></label><br>
+      <input  style="width:200px; height:20px;" type="text" name="nome"><br>
 
-     
-    
-  <!--<img src="images/ask2.png" style="width: 130px; height: 120px;   position: absolute; ">-->
-    <label style="color: black; font-family: verdana ; z-index: 99"><b>CPF</b></label> <br> 
-    <input  style="width:200px; height:20px; z-index: 99 "type="text" name="cpf"><br>
- 
-    <button style="z-index: 99; margin-top: 40px;  "type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
-    
-  </form>
-  </center>
- </div>
+      <label style="color: black; font-family: verdana; z-index: 99"  ><b>Email</b></label><br>  
+      <input style="width:200px; height:20px;  z-index: 9" type="text" name="email"> <br>
 
+      <label style="color: black; font-family: verdana;"><b>Telefone</b></label><br>
+      <input style="width:200px; height:20px;" type="text" name="telef"><br>
+      
+      <label style="color: black; font-family: verdana;"><b>Usuário</b></label><br>
+      <input style="width:200px; height:20px;"type="text" name="usuario"><br>
+       
+      <label style="color: black; font-family: verdana"><b>Senha</b></label><br> 
+      <input style="width:200px; height:20px;" type="password" name="senha"><br>
 
-<div class="cadastro" style="">
-  <center>
-  <form method="post">
-    <legend style="color: black; font-family: System;"><b>LOGIN</b></legend><br>
-
-    <label style="color: black; font-family: verdana;" for="usuario"><b>Usuário</b></label><br>
-    <input style="width:200px; height:20px;"type="text" name="usuario"><br>
-
-    <label style="color: black; font-family: verdana" for="senha"><b>Senha</b></label><br>
-    <input  style="width:200px; height:20px;" type="text" name="senha"><br>  
-    
-    <button class="btn btn-blue"><b>LOGIN</b></button><br>
-      <img src="images/login.png" style="width: 130px; height: 120px; margin:30px -30px; position: absolute; ">   
-  </form>
-  </center>
-</div>
-
-
-</div>
+      <label style="color: black; font-family: verdana ; z-index: 99"><b>CPF</b></label> <br> 
+      <input  style="width:200px; height:20px; z-index: 99 "type="text" name="cpf"><br>
    
+      <button style="z-index: 99; margin-top: 40px;  "type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
+      
+    </form>
+    </center>
+   </div>
+
+
+  <div class="cadastro" style="">
+    <center>
+    <form method="post">
+      <legend style="color: black; font-family: System;"><b>LOGIN</b></legend><br>
+
+      <label style="color: black; font-family: verdana;" for="usuario"><b>Usuário</b></label><br>
+      <input style="width:200px; height:20px;"type="text" name="usuario"><br>
+
+      <label style="color: black; font-family: verdana" for="senha"><b>Senha</b></label><br>
+      <input  style="width:200px; height:20px;" type="text" name="senha"><br>  
+      
+      <button class="btn btn-blue"><b>LOGIN</b></button><br>
+        <img src="images/login.png" style="width: 130px; height: 120px; margin:30px -30px; position: absolute; ">   
+         </form>
+      </center>
+    </div>
+  </div>
+     
 <?php
       include_once('UsuarioDAO.php');
       include_once ('Profess.php');
+       include_once 'config.php';
       
       $Insere = new UsuarioDAO();
       $profess =  new Profess();
@@ -415,7 +378,18 @@
   }
   ?>
      <!--CODIGO DO LOGIN -->
+<?php
+  include_once 'professorDAO.php';
+  $Logar = new ProfessorDAO();
+  $profess = new Profess();
 
+  if (isset($_POST['gravar'])) {
+    
+    $Logar->Logar($_POST['usuario'], $_POST['senha']);
+  
+  }
+
+?>
 
 </body>
 </html>

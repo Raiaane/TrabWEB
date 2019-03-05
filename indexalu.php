@@ -1,7 +1,22 @@
+<?php
+  
+  session_start();
+
+    if (isset($_GET['respprova'])) {
+      
+      echo "<script>location.href = 'responder.php?materia=".$_GET['respprova']."'</script>";
+
+    }
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Index Aluno</title>
 </head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -247,10 +262,7 @@
                   <ul>
                         <li><a href="index.php">Home</a></li>
                         <li><a href="index.php">Aluno</a>
-                              <ul>
-                                    <li><a href="index.php"><?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Cadastro</a></li>
-                                    <li><a href="index.php"> <?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Login</a></li>
-                              </ul>
+                              
                         </li>
                         <li><a href="professor.php">Professor</a>
                         <ul>
@@ -298,7 +310,7 @@
 <center>
 <label  style="font-family: System;"><b>Matemática e suas tecnologias</b></label>
 <label><p>Matemática e suas Tecnologias é um dos eixos de estudo mais temidos pelos estudantes, seja aqueles que buscam o certificado do ensino médio pelo Encceja ou ingressar no ensino superior com o Enem. Muitos candidatos podem ficar desesperados só de imaginar as questões, mas, com preparação e organização é possível alcançar uma boa nota na matéria. Para testar seus conhcecimentos, utilize o botão abaixo:</p></label>
-<label><button class="btn btn-red">Matemática</button></label>
+<label><a href="?respprova=matematica"><button class="btn btn-red">Matemática</button></a></label>
 </center>  	
 </div>
 
@@ -308,7 +320,7 @@
 <label ><p>A prova de Linguagens, Códigos e suas Tecnologias não abrange somente o conteúdo de Língua Portuguesa, Literatura e Língua Estrangeira (Inglês ou Espanhol) – ela inclui também Artes, Educação Física e Tecnologias da Informação e Comunicação.
 Teste seus conhecimentos aqui:
 </p></label>
-<label ><button class="btn2 btn-yellow">Linguagens</button></label>
+<label ><a href="?respprova=linguagens"><button class="btn2 btn-yellow">Linguagens</button></a></label>
 <center>
 </div>
 
@@ -318,7 +330,7 @@ Teste seus conhecimentos aqui:
 <label ><p>A prova de Linguagens, Códigos e suas Tecnologias não abrange somente o conteúdo de Língua Portuguesa, Literatura e Língua Estrangeira (Inglês ou Espanhol) – ela inclui também Artes, Educação Física e Tecnologias da Informação e Comunicação.
 Teste seus conhecimentos aqui:
 </p></label>
-<label><button class="btn3 btn-rosa">Humanas</button></label>
+<label><a href="?respprova=humanas"><button class="btn3 btn-rosa">Humanas</button></a></label>
 
 
       
@@ -333,7 +345,7 @@ Teste seus conhecimentos aqui:
 <label ><p>As ciências naturais constituem numa classificação que abarca as áreas da ciência que visam a estudar a natureza em seus aspectos mais gerais e fundamentais, isso é, o universo como um todo.
 Teste seus conhecimentos aqui:
 </p></label>
-<label><button class="btn4 btn-pink">Natureza</button></label>
+<label><a href="?respprova=natureza"><button class="btn4 btn-pink">Natureza</button></a></label>
 
 
       

@@ -19,7 +19,7 @@
         $this->nome = $nome;
 
         return $this;
-    }	
+    }
     public function getEmail()
     {
         return $this->email;

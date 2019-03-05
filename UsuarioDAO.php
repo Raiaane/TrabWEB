@@ -1,9 +1,31 @@
 <?php
 include_once('config.php');
 include_once('Usuario.php');
-class UsuarioDAO 
-{
-    
+class UsuarioDAO {
+        public function Logar($user, $senha) {
+        
+            $con = new Conexao();
+            $stmt = $con->Con();
+            
+            $sql = $stmt->query("SELECT usuario, senha FROM aluno WHERE usuario = '".$user."' AND senha = '".$senha."'");
+            
+            $sql->execute();
+
+            if ($sql->rowCount() > 0) {
+            
+                echo "
+                    <script> location.href='indexalu.php'</script>
+                ";
+            
+            } else {
+
+                echo "<script>alert('deu errado')</script>";
+
+            }
+        
+        }
+
+        
     function Cadastra(Usuario $usuario)
     {
         $con = new Conexao();

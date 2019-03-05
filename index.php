@@ -170,6 +170,31 @@
         background-color:#B0C4DE ;
         box-shadow: 0 5px 0 #4682B4;
       }
+      
+
+
+  /*.services ul li{
+    list-style:none;
+    padding:10px;
+  }
+
+  .services ul li:nth-child(odd){
+    background:#333;
+    color:#fff;
+  }
+
+  .services ul li:nth-child(even){
+    background:#56a79a;
+    color:#fff;
+  }
+
+  .contact form{
+    background:#333;
+    color:#fff;
+    padding:20px;
+  }
+*/
+  
 
 
 </style>
@@ -184,16 +209,11 @@
 		<nav class="menu" >
 		<h2  style="width: 230px; border: 1px; margin-left: 10px; color: white; font-family: verdana; display: inline-block; margin-top: 10px; background-color: #48D1CC; ">Simulado Online</h2>
 			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="alunoo.php">Aluno</a>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="index.php">Aluno</a>
 					<ul>
-<<<<<<< HEAD
 						<li><a href="index.php">Cadastro</a></li>
 						<li><a href="index.php">Login</a></li>
-=======
-						<li><a href="">Cadastro</a></li>
-						<li><a href="">Login</a></li>
->>>>>>> 0747237458236b574d67d75050af70a917cd860f
 					</ul>
 				</li>
 				<li><a href="professor.php">Professor</a>
@@ -201,7 +221,7 @@
 						<li><a href="">Provas</a></li>
 						<li><a href="">Gabaritos</a></li>
 					</ul></li>
-				<li><a href="">Dicas</a></li>
+				<li><a href="dicas.php">Dicas</a></li>
 
 		        
 			</ul>
@@ -306,8 +326,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
 
  
 
@@ -327,7 +345,6 @@
         label[for="resp"]{
         display: block;
       }*/
->>>>>>> 0747237458236b574d67d75050af70a917cd860f
 </style>
 
 
@@ -338,9 +355,8 @@
     <form method="post">
   
          
-   <label style="color: black; font-family: System; width: 90px;
-    height: 25px;" ><b>CADASTRE-SE</b></label><br>
-  
+   
+  <legend style="color: black; font-family: System; margin-top: 10px;"><b>CADASTRE-SE</b></legend><br>
     <label style="color: black; font-family: verdana;"><b>Nome</b></label><br>
     <input  style="width:200px; height:20px;" type="text" name="nome"><br>  
 
@@ -355,11 +371,11 @@
 
     <label style="color: black; font-family: verdana; z-index: 99"  ><b>Email</b></label><br> 
     <input style="width:200px; height:20px;  z-index: 9" type="text" name="email"> <br>
- <!-- <img src="images/ask2.png" style="width: 130px; height: 120px;   position: absolute; "> --> 
+ 
     <label style="color: black; font-family: verdana ; z-index: 99"><b>CPF</b></label> <br> 
     <input  style="width:200px; height:20px; z-index: 99 "type="text" name="cpf"><br>
  
-    <button style="z-index: 99; margin-top: 40px;  "type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
+    <button style="z-index: 99; margin-top: 40px; margin-left: 10px;""  type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
     
   </form>
   </center>
@@ -369,33 +385,22 @@
 <div class="cadastro" style="">
   <center>
   <form method="post">
-    <legend style="color: black; font-family: System;"><b>LOGIN</b></legend><br>
+    <legend style="color: black; font-family: System; margin-top: 27px;"><b>LOGIN</b></legend><br>
 
     <label style="color: black; font-family: verdana;" for="usuario"><b>Usuário</b></label><br>
     <input style="width:200px; height:20px;"type="text" name="usuario"><br>
 
     <label style="color: black; font-family: verdana" for="senha"><b>Senha</b></label><br>
-    <input  style="width:200px; height:20px;" type="text" name="senha"><br>  
+    <input  style="width:200px; height:20px;" type="password" name="senha"><br>  
     
-<<<<<<< HEAD
-=======
     
-    <!-- 
-
-    <label style="color: black; font-family: verdana;"><b>Usuário</b></label><br>
-    <input  style="width:200px; height:20px;" type="text" name="user">
-                    
-    <label style="color: black;  font-family: verdana"><b>Email</b></label><br> 
-    <input  style="width:200px; height:20px;" type="text" name="email">
-
-    <label style="color: black; font-family: verdana"><b>Senha</b></label> <br>
-    <input  style="width:200px; height:20px;"  type="password" name="pass"> -->
+   
        
->>>>>>> 0747237458236b574d67d75050af70a917cd860f
-    <button class="btn btn-blue"><b>LOGIN</b></button><br>
-    <!-- <img src="images/icon4.png" style="width: 130px; height: 120px;  position: absolute; ">  -->
+    <button name="gravar" class="btn btn-blue" style="margin-left: 10px;"><b>LOGIN</b></button><br>
+    
   </form>
   </center>
+
 </div>
 
 
@@ -404,6 +409,7 @@
 <?php
       include_once('UsuarioDAO.php');
       include_once ('Usuario.php');
+      include_once 'config.php';
       
       $Insere = new UsuarioDAO();
       $usuario =  new Usuario();
@@ -420,65 +426,21 @@
   ?>
 
      <!--CODIGO DO LOGIN -->
+     <?php
+  
+  $Logar = new UsuarioDAO();
+  $usuario = new Usuario();
+
+  if (isset($_POST['gravar'])) {
+    
+    $Logar->Logar($_POST['usuario'], $_POST['senha']);
+  
+  }
+
+?>
 
 
 </body>
 </html>
 
   
-<<<<<<< HEAD
-=======
-<!-- <div class="resp" >
-
-   <form method="post">
-   <img src="images/ask2.png" style="width: 130px; height: 120px;  margin-left: 50px;">
-         
-   <label style="color: black;  margin-left:180px; font-family: System; width: 90px;
-    height: 25px;" ><b>CADASTRE-SE</b></label><br>
-  
-    <label style="color: black; font-family: verdana;"><b>Nome</b></label><br>
-    <input  style="width:200px; height:20px;" type="text" name="nome"><br>  
-
-    <label style="color: black;   font-family: verdana;"><b>Telefone</b></label><br>
-    <input style="width:200px; height:20px;" type="text" name="telef"><br>
-    
-    <label style="color: black;    font-family: verdana;"><b>Usuário</b></label><br>
-    <input style="width:200px; height:20px;"type="text" name="usuario"><br>
-     
-    <label style="color: black;    font-family: verdana"><b>Senha</b></label><br> 
-    <input style="width:200px; height:20px;" type="password" name="senha"><br>
-
-    <label style="color: black;    font-family: verdana"><b>Email</b></label><br> 
-    <input style="width:200px; height:20px;" type="text" name="email"> <br>
-
-    <label style="color: black;    font-family: verdana"><b>CPF</b></label> <br> </center>
-    <input  style="width:200px; height:20px;"type="text" name="cpf"><br>
- 
-    <button type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
-
-</form>
-</div>         
-
-      
-     <div class="resp2">
-    
- Login
-      <form method="post">
-  
-        <label style="color: black;  margin-left: -85px; font-family: verdana; "><b>Usuário</b></label>
-        <input  style="width:200px; height:20px;" type="text" name="user">
-            
-        <label style="color: black;  margin-left: -85px; font-family: verdana"><b>Senha</b></label> 
-        <input  style="width:200px; height:20px;"  type="password" name="pass">
-               
-        <label style="color: black;  font-family: verdana"><b>Email</b></label> 
-        <input  style="width:200px; height:20px;"  type="text" name="email">
-        
-        <label style="color: black; margin-top: -200px; margin-left: -300px; font-family: System;"><b>LOGIN</b></label> 
-
-        <button class="btn btn-blue"><b>LOGIN</b></button>
-
-      </form>
-    </div>
-</div> -->
->>>>>>> 0747237458236b574d67d75050af70a917cd860f

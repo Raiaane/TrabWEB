@@ -135,19 +135,18 @@
             <h2  style="width: 230px; border: 1px; margin-left: 10px; color: white; font-family: verdana; display: inline-block; margin-top: 10px; background-color: #48D1CC; ">Simulado Online</h2>
                   <ul>
                         <li><a href="index.php">Home</a></li>
-                        <!--<li><a href="index.php">Aluno</a>
+                        <li><a href="index.php">Aluno</a>
                               <ul>
-                                    <li><a href="index.php">Cadastro</a></li>
-                                    <li><a href="index.php"> Login</a></li>
+                                    <li><a href="index.php"><?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Cadastro</a></li>
+                                    <li><a href="index.php"> <?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Login</a></li>
                               </ul>
-                        </li>-->
+                        </li>
                         <li><a href="professor.php">Professor</a>
                         <ul>
                                     <li><a href="">Provas</a></li>
                                     <li><a href="">Gabaritos</a></li>
                               </ul></li>
                         <li><a href="">Dicas</a></li>
-                        <li><a href="">Sair</a></li>
 
                     
                   </ul>
