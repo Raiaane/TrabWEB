@@ -1,7 +1,35 @@
+<?php
+
+  session_start();
+
+  $table = $_SESSION['materia'];
+
+  include 'config.php';
+  include_once('QuestaoDAO.php');
+  include_once ('Questao.php');
+  
+  $Insere = new   QuestaoDAO();
+  $questao =  new Questao();
+    
+  if(isset($_POST['questao'])){
+
+    $questao->setQuestao($_POST['questao']);
+    $questao->setA1($_POST['alternativaa']);
+    $questao->setA2($_POST['alternativab']);
+    $questao->setA3($_POST['alternativac']);
+    $questao->setA4($_POST['alternativad']);
+    $questao->setGab($_POST['gabarito']);
+
+    $Insere->Cadastra($questao, $table);
+
+  }
+  
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Cadastrar Prova</title>
 </head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -163,7 +191,7 @@
           font-family: verdana;
            width:150px; 
            height: 40px;
-      }
+      } 
       .btn-blue:hover{
         background-color:#B0C4DE ;
         box-shadow: 0 5px 0 #4682B4;
@@ -182,8 +210,8 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="index.php">Aluno</a>
                               <ul>
-                                    <li><a href="index.php"><?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Cadastro</a></li>
-                                    <li><a href="index.php"> <?php echo "<script>alert('CADASTRE-SE OU LOGA-SE')</script>"; ?>Login</a></li>
+                                    <li><a href="index.php">Cadastro</a></li>
+                                    <li><a href="index.php">Login</a></li>
                               </ul>
                         </li>
                         <li><a href="professor.php">Professor</a>
@@ -203,27 +231,28 @@
 
 <div class="formulario">
 
-    <form>
+    <form method="post">
     	
     	<label><b><i>Questão</b></i></label><br>
-    	<input type="quetao" name="quetao"><br>
+    	<input type="text" name="questao"><br>
     	<label>Alternativa a</label><br>
-    	<input type="altea" name="alternativaa"><br>
+    	<input type="text" name="alternativaa"><br>
     	<label>Alternativa b</label><br>
-    	<input type="alteb" name="alternativab"><br>
+    	<input type="text" name="alternativab"><br>
         <label>Alternativa c</label><br>
-    	<input type="altec" name="alternativac"><br>
+    	<input type="text" name="alternativac"><br>
     	<label>Alternativa d</label><br>
-    	<input type="alted" name="alternativad"><br>
+    	<input type="text" name="alternativad"><br>
     	<label>Gabarito</label><br>
 
 
-    	<input type="gabar" name="gabarito"><br>
+    	<input type="text" name="gabarito"><br>
 <img src="images/icon20.png" style="width: 130px; height: 120px; margin-top: -180px; margin-left: 10px;">
 <center> <button type="submit" value="enviar" type="submit" name="enviar" class="btn btn-blue"><b>Cadastrar questão</b></button>
     </form>
 	
 </div>
+
 
 </body>
 </html>
