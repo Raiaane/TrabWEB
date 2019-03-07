@@ -45,6 +45,7 @@
   <script type= "text/javascript" src="js/jquery.min.js"> </script>
   <script type= "text/javascript" src="js/jquery.cycle.all.js"> </script>
 
+
 <style type="text/css">
   
 
@@ -567,9 +568,10 @@
                         <li><a href="professor.php">Professor</a>
                         <ul>
                                     <li><a href="">Provas</a></li>
-                                    <li><a href="">Gabaritos</a></li>
+                                  
                               </ul></li>
-                        <li><a href="">Dicas</a></li>
+                        <li><a href="dicas.php">Dicas</a></li>
+                         <li><a href="index.php">SAIR</a></li>
                   </ul>
             </nav>
 </div>

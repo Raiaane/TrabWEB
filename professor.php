@@ -5,6 +5,16 @@
 </head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type= "text/javascript" src="js/jquery.min.js"> </script>
+<script type= "text/javascript" src="js/jquery.cycle.all.js"> </script>
+<script type= "text/javascript" src="js/jquery.mask.js"> </script>
+<script type="text/javascript">
+$(document).ready(function(){
+   $('.cpf').mask('000.000.000-00');
+   $('.tele').mask('(00)00000-0000');
+});
+</script>
 <style type="text/css">
   
 
@@ -15,20 +25,20 @@
   nav { display: flex;
     flex-direction: row
    }
-  .menu{
+   .menu{
     width: 100%;
     height: 50px;
     background-color: #48D1CC;
     font-family: 'Arial';
     position: relative;
   }
-      .menu ul{
+   .menu ul{
         list-style: none;
         position: relative;
       }
 
   
-      .menu ul li{
+    .menu ul li{
         width: 150px;
         float: left;
       }
@@ -187,7 +197,7 @@
     <nav class="menu" >
     <h2  style="width: 230px; border: 1px; margin-left: 10px; color: white; font-family: verdana; display: inline-block; margin-top: 10px; background-color: #48D1CC; ">Simulado Online</h2>
       <ul>
-        <li><a href="index.php">Home</a></li>
+        <li><a href="professor.php">Home</a></li>
         <li><a href="index.php">Aluno</a>
           <ul>
             <li><a href="index.php">Cadastro</a></li>
@@ -196,10 +206,10 @@
         </li>
         <li><a href="professor.php">Professor</a>
         <ul>
-            <li><a href="">Provas</a></li>
-            <li><a href="">Gabaritos</a></li>
+            <li><a href="professor.php">Provas</a></li>
+          
           </ul></li>
-        <li><a href="">Dicas</a></li>
+        <li><a href="dicas.php">Dicas</a></li>
 
             
       </ul>
@@ -317,29 +327,29 @@
       height: 25px;" ><b>CADASTRE-SE</b></label><br>
     
       <label style="color: black; font-family: verdana;"><b>Nome</b></label><br>
-      <input  style="width:200px; height:20px;" type="text" name="nome"><br>
+      <input  style="width:200px; height:20px;" type="text" name="nome" placeholder="Nome"><br>
 
       <label style="color: black; font-family: verdana; z-index: 99"  ><b>Email</b></label><br>  
-      <input style="width:200px; height:20px;  z-index: 9" type="text" name="email"> <br>
+      <input style="width:200px; height:20px;  z-index: 9" type="text" name="email"  placeholder="gmail@gmail.com"> <br>
 
-      <label style="color: black; font-family: verdana;"><b>Telefone</b></label><br>
-      <input style="width:200px; height:20px;" type="text" name="telef"><br>
+      <label style="color: black; font-family: verdana;"  ><b>Telefone</b></label><br>
+      <input style="width:200px; height:20px;" type="text" name="telef" class="tele" placeholder="(84)99999-9999"><br>
       
       <label style="color: black; font-family: verdana;"><b>Usuário</b></label><br>
-      <input style="width:200px; height:20px;"type="text" name="usuario"><br>
+      <input style="width:200px; height:20px;"type="text" name="usuario" placeholder="usuario"><br>
        
       <label style="color: black; font-family: verdana"><b>Senha</b></label><br> 
-      <input style="width:200px; height:20px;" type="password" name="senha"><br>
+      <input style="width:200px; height:20px;" type="password" name="senha" placeholder="*********"><br>
 
       <label style="color: black; font-family: verdana ; z-index: 99"><b>CPF</b></label> <br> 
-      <input  style="width:200px; height:20px; z-index: 99 "type="text" name="cpf"><br>
+      <input class="cpf"  style="width:200px; height:20px; z-index: 99 "type="text" name="cpf" placeholder="999.999.999-99"><br>
    
       <button style="z-index: 99; margin-top: 40px;  "type="submit" value="enviar" type="submit" name="enviar" class="btn btn-yellow"><b>CADASTRE-SE</b></button>
       
     </form>
     </center>
    </div>
-
+   
 
   <div class="cadastro" style="">
     <center>
@@ -347,12 +357,12 @@
       <legend style="color: black; font-family: System;"><b>LOGIN</b></legend><br>
 
       <label style="color: black; font-family: verdana;" for="usuario"><b>Usuário</b></label><br>
-      <input style="width:200px; height:20px;"type="text" name="usuario"><br>
+      <input style="width:200px; height:20px;"type="text" name="usuario" placeholder="usuario"><br>
 
-      <label style="color: black; font-family: verdana" for="senha"><b>Senha</b></label><br>
-      <input  style="width:200px; height:20px;" type="text" name="senha"><br>  
-      
-      <button class="btn btn-blue"><b>LOGIN</b></button><br>
+      <label style="color: black; font-family: verdana" for="senha" ><b>Senha</b></label><br>
+      <input  style="width:200px; height:20px;" type="password" name="senha" placeholder="*********"><br>  
+    
+      <button  class="btn btn-blue" name="gravar"><b>LOGIN</b></button><br>
         <img src="images/login.png" style="width: 130px; height: 120px; margin:30px -30px; position: absolute; ">   
          </form>
       </center>

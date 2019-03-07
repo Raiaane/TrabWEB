@@ -254,10 +254,11 @@
                         </li>
                         <li><a href="professor.php">Professor</a>
                         <ul>
-                                    <li><a href="">Provas</a></li>
-                                    <li><a href="">Gabaritos</a></li>
+                                    <li><a href="professor.php">Provas</a></li>
+                                   
                               </ul></li>
-                        <li><a href="">Dicas</a></li>
+                        <li><a href="dicas.php">Dicas</a></li>
+                         <li><a href="index.php">SAIR</a></li>
 
                     
                   </ul>
@@ -320,7 +321,7 @@
          border-radius: 30px;
           font-family: verdana;
            width:150px; 
-           height: 40px;
+           height: 30px;
   }
 </style>
 <script type="text/javascript">
